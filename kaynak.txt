@@ -1,0 +1,9 @@
+https://www.youtube.com/watch?v=Mn0rdbJPWEo
+https://www.youtube.com/watch?v=1aXZQcG2Y6I
+https://stackoverflow.com/questions/50093144/mysql-8-0-client-does-not-support-authentication-protocol-requested-by-server
+https://stackoverflow.com/questions/69959820/typeerror-exphbs-is-not-a-function
+https://coderedirect.com/questions/205496/how-to-change-default-layout-in-express-using-handlebars
+https://stackoverflow.com/questions/23266854/node-mysql-multiple-statements-in-one-query
+https://stackoverflow.com/questions/60234298/selecting-from-2-tables-at-one-time-in-node-js/60234412#60234412
+https://stackoverflow.com/questions/31221980/how-to-access-a-rowdatapacket-object
+https://stackoverflow.com/questions/25095991/how-to-set-a-variable-for-the-main-handlebars-layout-without-passing-it-to-every

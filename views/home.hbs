@@ -1,0 +1,86 @@
+
+<div class="row">
+  <div class="col-6">
+    <h1>Kullanıcılar</h1>
+  </div>
+  <div class="col-6 d-flex justify-content-end">
+    <a href="/adduser" type="button" class="btn btn-primary align-self-center">Kullanıcı Ekle</a>
+  </div>
+</div>
+
+
+
+<table class="table table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Kullanıcı Adı</th>
+      <th scope="col">Şifre</th>
+      <th scope="col" class="text-end">İşlemler</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {{#each user}}
+    <tr>
+      <th scope="row">{{this.kullaniciId}}</th>
+      <td>{{this.kullaniciAd}}</td>
+      <td>{{this.kullaniciSifre}}</td>
+      <td class="text-end">
+        <a href="/edituser/{{this.kullaniciId}}" type="button" class="btn btn-light btn-small"><i class="bi bi-pencil"></i>
+          Güncelle</a>
+        <a href="/{{this.kullaniciId}}" type="button" class="btn btn-light btn-small"><i class="bi bi-person-x"></i> Sil</a>
+      </td>
+    </tr>
+    {{/each}}
+
+  </tbody>
+</table>
+
+<div class="row">
+  <div class="col-6">
+    <h1>Projeler</h1>
+  </div>
+</div>
+
+
+<table class="table table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Kullanıcı Adı</th>
+      <th scope="col">Öğrenci Adı</th>
+      <th scope="col">Öğrenci Soyadı</th>
+      <th scope="col">Öğrenci No</th>
+      <th scope="col">Öğretim Türü</th>
+      <th scope="col">Ders Adı</th>
+      <th scope="col">Özet</th>
+      <th scope="col">Dönem</th>
+      <th scope="col">Başlık</th>
+      <th scope="col">Anahtar Kelimeler</th>
+      <th scope="col">Danışmanlar</th>
+      <th scope="col">Jüri</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {{#each project}}
+    <tr>
+      <th scope="row">{{this.projeId}}</th>
+      <td>{{this.kullaniciAd}}</td>
+      <td>{{this.ogrenciAd}}</td>
+      <td>{{this.ogrenciSoyad}}</td>
+      <td>{{this.ogrenciNo}}</td>
+      <td>{{this.ogretimTur}}</td>
+      <td>{{this.dersAd}}</td>
+      <td>{{this.ozet}}</td>
+      <td>{{this.donem}}</td>
+      <td>{{this.baslik}}</td>
+      <td>{{this.anahtar}}</td>
+      <td>{{this.danisman}}</td>
+      <td>{{this.juri}}</td>
+    </tr>
+    {{/each}}
+
+  </tbody>
+</table>

@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="col-6">
+    <h1>Projeler</h1>
+  </div>
+</div>
+
+
+<table class="table table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Öğrenci Adı</th>
+      <th scope="col">Öğrenci Soyadı</th>
+      <th scope="col">Öğrenci No</th>
+      <th scope="col">Öğretim Türü</th>
+      <th scope="col">Ders Adı</th>
+      <th scope="col">Özet</th>
+      <th scope="col">Dönem</th>
+      <th scope="col">Başlık</th>
+      <th scope="col">Anahtar Kelimeler</th>
+      <th scope="col">Danışmanlar</th>
+      <th scope="col">Jüri</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {{#each project}}
+    <tr>
+      <th scope="row">{{this.projeId}}</th>
+      <td>{{this.ogrenciAd}}</td>
+      <td>{{this.ogrenciSoyad}}</td>
+      <td>{{this.ogrenciNo}}</td>
+      <td>{{this.ogretimTur}}</td>
+      <td>{{this.dersAd}}</td>
+      <td>{{this.ozet}}</td>
+      <td>{{this.donem}}</td>
+      <td>{{this.baslik}}</td>
+      <td>{{this.anahtar}}</td>
+      <td>{{this.danisman}}</td>
+      <td>{{this.juri}}</td>
+    </tr>
+    {{/each}}
+
+  </tbody>
+</table>
